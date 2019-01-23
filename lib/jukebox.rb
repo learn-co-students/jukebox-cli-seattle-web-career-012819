@@ -46,13 +46,13 @@ def run(songs)
   while user_response != "exit"
     puts "Please enter a command:"
     user_response = gets.chomp
-    if user_response = "list"
+    if user_response == "list"
       list(songs)
-    elsif user_response = "play"
+    elsif user_response == "play"
       play(songs)
-    elsif user_response = "help"
+    elsif user_response == "help"
       help 
-    elsif user_response = "exit"
+    elsif user_response == "exit"
       exit_jukebox
     else
       puts "Invalid input, please try again"
